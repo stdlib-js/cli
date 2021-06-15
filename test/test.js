@@ -371,7 +371,7 @@ tape( 'if the `updates` option is `true` and package meta data is provided, the 
 
 	opts = {
 		'pkg': {
-			'name': '@stdlib/cli',
+			'name': './..',
 			'version': '0.0.0'
 		},
 		'updates': true
@@ -448,7 +448,7 @@ tape( 'if the `updates` option is `true` and insufficient package meta data is p
 
 	opts = {
 		'pkg': {
-			'name': '@stdlib/cli'
+			'name': './..'
 		},
 		'updates': true
 	};
