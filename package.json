@@ -15,6 +15,7 @@
   ],
   "main": "./lib",
   "directories": {
+    "doc": "./docs",
     "example": "./examples",
     "lib": "./lib",
     "test": "./test"
@@ -35,13 +36,13 @@
     "url": "https://github.com/stdlib-js/stdlib/issues"
   },
   "dependencies": {
-    "@stdlib/utils": "^0.0.x",
+    "@stdlib/utils": "github:stdlib-js/utils",
     "minimist": "^1.2.0"
   },
   "devDependencies": {
-    "@stdlib/assert": "^0.0.x",
-    "@stdlib/bench": "^0.0.x",
-    "@stdlib/fs": "^0.0.x",
+    "@stdlib/assert": "github:stdlib-js/assert",
+    "@stdlib/bench": "github:stdlib-js/bench",
+    "@stdlib/fs": "github:stdlib-js/fs",
     "proxyquire": "^2.0.0",
     "tape": "git+https://github.com/kgryte/tape.git#fix/globby",
     "istanbul": "^0.4.1",
