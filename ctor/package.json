@@ -1,6 +1,6 @@
 {
-  "name": "@stdlib/cli",
-  "version": "0.0.10",
+  "name": "@stdlib/cli/ctor",
+  "version": "0.0.0",
   "description": "Command-line interface.",
   "license": "Apache-2.0",
   "author": {
@@ -14,42 +14,28 @@
     }
   ],
   "main": "./lib",
+  "browser": {
+    "process": "process/"
+  },
   "directories": {
+    "benchmark": "./benchmark",
     "doc": "./docs",
     "example": "./examples",
     "lib": "./lib",
     "test": "./test"
   },
   "types": "./docs/types",
-  "scripts": {
-    "test": "make test",
-    "test-cov": "make test-cov",
-    "examples": "make examples",
-    "benchmark": "make benchmark"
-  },
-  "homepage": "https://stdlib.io",
+  "scripts": {},
+  "homepage": "https://github.com/stdlib-js/stdlib",
   "repository": {
     "type": "git",
-    "url": "git://github.com/stdlib-js/cli.git"
+    "url": "git://github.com/stdlib-js/stdlib.git"
   },
   "bugs": {
     "url": "https://github.com/stdlib-js/stdlib/issues"
   },
-  "dependencies": {
-    "@stdlib/string": "github:stdlib-js/string#main",
-    "@stdlib/utils": "github:stdlib-js/utils#main",
-    "minimist": "^1.2.0",
-    "@stdlib/error-tools-fmtprodmsg": "^0.0.x"
-  },
-  "devDependencies": {
-    "@stdlib/assert": "github:stdlib-js/assert",
-    "@stdlib/bench": "github:stdlib-js/bench",
-    "@stdlib/fs": "github:stdlib-js/fs",
-    "proxyquire": "^2.0.0",
-    "tape": "git+https://github.com/kgryte/tape.git#fix/globby",
-    "istanbul": "^0.4.1",
-    "tap-min": "2.x.x"
-  },
+  "dependencies": {},
+  "devDependencies": {},
   "engines": {
     "node": ">=0.10.0",
     "npm": ">2.7.0"
@@ -75,9 +61,9 @@
     "command-line",
     "interface"
   ],
-  "__stdlib__": {},
-  "funding": {
-    "type": "patreon",
-    "url": "https://www.patreon.com/athan"
+  "__stdlib__": {
+    "envs": {
+      "browser": false
+    }
   }
 }
