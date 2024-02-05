@@ -1,0 +1,21 @@
+"use strict";var a=function(r,e){return function(){return e||r((e={exports:{}}).exports,e),e.exports}};var j=a(function(fe,W){W.exports={pkg:{},help:"",title:!0,version:"",updates:!0,argv:null,options:{}}});var C=a(function(ge,I){
+function X(r){return Math.floor(r)===r}I.exports=X
+});var A=a(function(ye,V){
+var s=require('@stdlib/string/format/dist'),u=Object.prototype.hasOwnProperty,c=Array.isArray;function Y(r,e){return typeof e!="object"||e===null||c(e)?new TypeError(s('0GZ2V',e)):u.call(e,"pkg")&&(r.pkg=e.pkg,typeof r.pkg!="object"||r.pkg===null||c(r.pkg))?new TypeError(s('0GZCd',"pkg",r.pkg)):u.call(e,"help")&&(r.help=e.help,typeof r.help!="string")?new TypeError(s('0GZ2W',"help",r.help)):u.call(e,"version")&&(r.version=e.version,typeof r.version!="string")?new TypeError(s('0GZ2W',"version",r.version)):u.call(e,"title")&&(r.title=e.title,typeof r.title!="string"&&typeof r.title!="boolean")?new TypeError(s("invalid option. `%s` option must be either a string or boolean primitive. Option: `%s`.","title",r.title)):u.call(e,"updates")&&(r.updates=e.updates,typeof r.updates!="boolean")?new TypeError(s('0GZ2o',"updates",r.updates)):u.call(e,"argv")&&(r.argv=e.argv,!c(r.argv))?new TypeError(s('0GZ8Z',"argv",r.argv)):u.call(e,"options")&&(r.options=e.options,typeof r.options!="object"||r.options===null||c(r.options))?new TypeError(s("invalid option. `%s` option must be a plain object. Option: `%s`.","options",r.options)):null;}V.exports=Y
+});var x=a(function(ce,M){
+var Z=require("process");M.exports=Z
+});var R=a(function(he,P){
+P.exports=console
+});var _=a(function(me,N){
+var $=x(),ee=$.versions.node,re=10;function te(r,e){var i;if(i=ee.split("."),i[0]=parseInt(i[0],10),i[1]=parseInt(i[1],10),i[0]>0){r.exitCode=e;return}if(i[1]>10){r.exitCode=e;return}r.exitCode=e,setTimeout(o,re);function o(){r.exit(e)}}N.exports=te
+});var L=a(function(be,F){
+var ie=require('@stdlib/utils/define-nonenumerable-read-only-property/dist'),ne=require('@stdlib/utils/noop/dist');function h(){return this instanceof h?this:new h}ie(h.prototype,"notify",ne);F.exports=h
+});var K=a(function(ke,D){
+var ae=require("minimist"),m=require('@stdlib/string/format/dist'),f=j(),q=C(),oe=A(),n=x(),O=R(),E=_(),se=L(),ue=Object.defineProperty,S=Object.keys;function l(r,e,i){ue(r,e,{configurable:!1,enumerable:!1,writable:!1,value:i})}function p(r){var e,i,o,t,g,T,b,k;if(!(this instanceof p))return arguments.length?new p(r):new p;if(t={pkg:{},help:f.help,title:f.title,version:f.version,updates:f.updates,argv:f.argv,options:{}},arguments.length&&(k=oe(t,r),k))throw k;if(b=this,n.stdout.on("error",n.exit),n.stderr.on("error",n.exit),l(this,"args",G),l(this,"flags",H),l(this,"help",J),l(this,"version",Q),t.title===!0&&t.pkg?typeof t.pkg.bin=="object"&&t.pkg.bin!==null?(o=S(t.pkg.bin),n.title=o[0]):t.pkg.name&&(n.title=t.pkg.name):t.title&&(n.title=t.title),t.updates&&t.pkg&&t.pkg.name&&t.pkg.version&&(e={pkg:t.pkg},se(e).notify()),!t.version&&t.pkg&&t.pkg.version&&(t.version=t.pkg.version),t.argv?t.argv=t.argv.slice(2):t.argv=n.argv.slice(2),g=ae(t.argv,t.options),T=g._,delete g._,i=g,i.help)return this.help(0);if(i.version)return this.version();return this;function G(){return T.slice()}function H(){var v,d,w,y;for(v=S(i),d={},y=0;y<v.length;y++)w=v[y],d[w]=i[w];return d}function J(v){O.error(t.help),b.close(v||0)}function Q(){O.error(t.version),b.close()}}l(p.prototype,"close",function(e){if(arguments.length===0){E(n,0);return}if(typeof e!="number"||!q(e)||e<0)throw new TypeError(m('0GZ2K',e));E(n,e)});l(p.prototype,"error",function(e,i){var o;if(!(e instanceof Error))throw new TypeError(m("invalid argument. First argument must be an error object. Value: `%s`.",e));if(arguments.length>1){if(typeof i!="number"||!q(i)||i<0)throw new TypeError(m('0GZ3X',i));o=i}else o=1;O.error("Error: %s",e.message),E(n,o)});l(p.prototype,"exit",function(e){if(arguments.length===0)return n.exit(0);if(typeof e!="number"||!q(e)||e<0)throw new TypeError(m('0GZ2K',e));n.exit(e)});D.exports=p
+});var z=a(function(de,U){
+var le=K();U.exports=le
+});var pe=require('@stdlib/utils/define-read-only-property/dist'),B={};pe(B,"CLI",z());module.exports=B;
+/** @license Apache-2.0 */
+/** @license Apache-2.0 */
+/** @license Apache-2.0 */
+//# sourceMappingURL=index.js.map
