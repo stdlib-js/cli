@@ -4,7 +4,7 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2026-02-16)
+## Unreleased (2026-04-19)
 
 <section class="issues">
 
@@ -24,6 +24,7 @@ This release closes the following issue:
 
 <details>
 
+-   [`726caad`](https://github.com/stdlib-js/stdlib/commit/726caad4328c62ab6c8bc93ab88e361c05b8f415) - **bench:** refactor to use string interpolation in `cli` [(#11621)](https://github.com/stdlib-js/stdlib/pull/11621) _(by Karan Anand)_
 -   [`47678cb`](https://github.com/stdlib-js/stdlib/commit/47678cbfcb7f1475f8eea7cc39dc9675fdfc3984) - **chore:** fix JavaScript lint errors [(#8075)](https://github.com/stdlib-js/stdlib/pull/8075) _(by Vara Rahul Rajana, Athan Reines)_
 -   [`7add020`](https://github.com/stdlib-js/stdlib/commit/7add0201c13e56a0381926ccfd4073c84eaf2ed4) - **test:** use standardized assertion messages and fix lint errors _(by Philipp Burckhardt)_
 -   [`07f7c05`](https://github.com/stdlib-js/stdlib/commit/07f7c0522c73e6ad9505e1d45035ae439344200d) - **test:** use standardized assertion messages and fix lint errors _(by Philipp Burckhardt)_
@@ -40,9 +41,10 @@ This release closes the following issue:
 
 ### Contributors
 
-A total of 3 people contributed to this release. Thank you to the following contributors:
+A total of 4 people contributed to this release. Thank you to the following contributors:
 
 -   Athan Reines
+-   Karan Anand
 -   Philipp Burckhardt
 -   Vara Rahul Rajana
 
